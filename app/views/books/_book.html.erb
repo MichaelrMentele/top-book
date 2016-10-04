@@ -1,12 +1,13 @@
 <li class="media-object well">
   <div class="book">
-    <h3><%= book.title %> </h3>
+    <h3>
+      <%= link_to book.title, book_path(book) %> 
+    </h3>
     <div class="quiet"><%= book.author %></div>
     <hr>
     <div class="text-center">
-      <img class="cover" src="<%= book.cover_url %>">
+      <img class="small-cover" src="<%= book.cover_url %>">
     </div>
   </div>
 </li>
-
 

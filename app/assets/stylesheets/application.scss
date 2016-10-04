@@ -6,14 +6,20 @@
   width: 156;
 }
 
-.mini-book {
+.mini-cover {
   margin: 4px;
   width: 76px;
 }
 
-.cover {
+.small-cover {
   width: 150px;
   height: 250px;
+  cursor: pointer;
+}
+
+.big-cover {
+  width: 240px;
+  height: 400px;
 }
 
 .media-object {

@@ -1,0 +1,25 @@
+<%= render 'shared/content_title.html.erb', title: @book.title %>
+
+<div class="text-center">
+  <h3>Author: <%= @book.author %></h3>
+</div>
+
+<br>
+
+<div class="row">
+  <div class="text-center col-xs-7">
+    <img src="<%= @book.cover_url %>">
+  </div>
+  <div class="col-xs-4">
+    <dl>
+      <dt>Why Read It</dt>
+      <dd><%= @book.why %></dd>
+      <dt>Description</dt>
+      <dd><%= @book.what %></dd>
+      <dt>Book Type</dt>
+      <dd><%= @book.how %></dd>
+    </dl>    
+  </div>
+</div>
+
+
