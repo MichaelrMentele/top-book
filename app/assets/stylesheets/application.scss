@@ -2,8 +2,7 @@
 @import "bootstrap";
 
 .book {
-  margin: 10px;
-  width: 156;
+  margin: 10px; 
 }
 
 .mini-cover {
@@ -23,9 +22,40 @@
 }
 
 .media-object {
+  position: relative;
   margin: 2px 8px 14px 8px;
+  padding-bottom: 30px;
 }
 
 .quiet {
   color: grey;
+}
+
+.votes, .add-vote, .subtract-vote {
+  position: absolute;
+  top: auto;
+  bottom: 12px;
+}
+
+.votes {
+  position: relative;
+  display: inline;
+  left: auto;
+  right: auto;
+  bottom: 8px;
+}
+
+.add-vote {
+  left: auto;
+  right: 12px;
+}
+
+.subtract-vote {
+  left: 12px;
+  right: auto;
+}
+
+.logo {
+  width: 24px;
+  height: 24px;
 }

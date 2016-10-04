@@ -9,5 +9,16 @@
       <img class="small-cover" src="<%= book.cover_url %>">
     </div>
   </div>
+  <br>
+  <div>
+    <%= link_to vote_book_path(book, vote: false), method: 'post', remote: true do %>
+      <i class="subtract-vote glyphicon glyphicon-minus"></i>
+    <% end %>
+    <div id="book_<%= book.id %>_votes" class="votes"><span><%= book.diff_votes %> votes</span></div>
+   
+    <%= link_to vote_book_path(book, vote: true), method: 'post', remote: true do %>
+      <i class="add-vote glyphicon glyphicon-plus"></i>
+    <% end %>
+  </div>
 </li>
 
