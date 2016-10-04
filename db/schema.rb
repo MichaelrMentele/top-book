@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161004030118) do
+ActiveRecord::Schema.define(version: 20161004151500) do
 
   create_table "books", force: :cascade do |t|
     t.string   "title"
@@ -28,6 +28,15 @@ ActiveRecord::Schema.define(version: 20161004030118) do
   create_table "comments", force: :cascade do |t|
     t.string   "body"
     t.integer  "book_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "votes", force: :cascade do |t|
+    t.boolean  "vote"
+    t.integer  "user_id"
+    t.string   "voteable_type"
+    t.integer  "voteable_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

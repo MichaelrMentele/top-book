@@ -3,7 +3,7 @@
     <h3>
       <%= link_to book.title, book_path(book) %> 
     </h3>
-    <div class="quiet"><%= book.author %></div>
+    <div class="quiet">by <%= book.author %></div>
     <hr>
     <div class="text-center">
       <img class="small-cover" src="<%= book.cover_url %>">
