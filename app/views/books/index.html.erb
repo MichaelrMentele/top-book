@@ -1,0 +1,9 @@
+<%= render 'shared/content_title.html.erb', title: "All Books" %>
+
+<div class="container">
+  <ul class="list-inline">
+    <% @books.each do |book| %>
+      <%= render 'book', book: book %>
+    <% end %>
+  </ul>
+</div>
