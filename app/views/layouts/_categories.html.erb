@@ -1,0 +1,30 @@
+<div class="tabs-left">
+  <ul class="nav nav-tabs">
+    <li class="<%= determine_active(nil) %>">
+      <%= link_to(books_path) do %>
+        <span class="glyphicon glyphicon-cloud"></span>
+      <% end %>
+    </li>
+    <% @categories.each do |category| %>
+    <li class="<%= determine_active(category) %>">
+      <%= link_to(category_path(category)) do %>
+        <span class="glyphicon glyphicon-<%= category.glyphicon %>"></span>
+      <% end %>
+    </li>
+    <% end %>
+  </ul>
+</div><!-- /tabbable -->
+
+
+
+<!-- 
+All                       -> cloud
+Biographies & Inspiration -> user
+Nueroscience & Psychology -> wrench
+Health & Physiology       -> tint
+Biology                   -> tree-deciduous
+Living Rightly            -> map-marker
+Computer Science          -> phone
+ -->
+
+    

@@ -1,5 +1,7 @@
 <%= render 'shared/content_title.html.erb', title: "All Books" %>
 
+<%= render 'layouts/categories' %>
+
 <div class="container">
   <ul class="list-inline text-center">
     <% @books.each do |book| %>

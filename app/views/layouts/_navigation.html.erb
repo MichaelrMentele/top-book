@@ -1,10 +1,17 @@
 <nav class="navbar navbar-default">
   <div class="container-fluid">
-    <div class="navbar-header">
       <a class="navbar-brand" href="#">
         <%= image_tag("logo", class: "logo") %>
       </a>
       <%= link_to "Top Books", root_path, :class => "navbar-brand" %>
-    </div>
+    <% if logged_in? %>
+      <div class='nav_item pull-right'>
+        <%= link_to logout_path do %>
+          <i class="glyphicon glyphicon-circle-arrow-left"></i>
+          Logout
+        <% end %>
+      </div>
+    <% end %>
   </div>
 </nav>
+

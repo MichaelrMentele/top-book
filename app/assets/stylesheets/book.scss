@@ -1,0 +1,43 @@
+.book {
+  margin: 10px; 
+}
+
+.mini-cover {
+  margin: 4px;
+  width: 76px;
+}
+
+.small-cover {
+  width: 150px;
+  height: 250px;
+  cursor: pointer;
+}
+
+.big-cover {
+  width: 240px;
+  height: 400px;
+}
+
+.votes, .add-vote, .subtract-vote {
+  position: absolute;
+  top: auto;
+  bottom: 12px;
+}
+
+.votes {
+  position: relative;
+  display: inline;
+  left: auto;
+  right: auto;
+  bottom: 8px;
+}
+
+.add-vote {
+  left: auto;
+  right: 12px;
+}
+
+.subtract-vote {
+  left: 12px;
+  right: auto;
+}

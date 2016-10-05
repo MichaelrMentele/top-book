@@ -20,4 +20,6 @@ Rails.application.routes.draw do
   get '/register', to: 'users#new'
   resources :users, except: [:new, :index]
 
+  resources :categories, only: [:show]
+
 end
